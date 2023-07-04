@@ -12,6 +12,12 @@ function Person(first, last, age, eye) {
     this.eyeColor = eye;
   }
 
+  const mySister = new Person("Kristine", "Gamble" , 21,"blue");
+  function printMySister() {
+    document.getElementById('mySister').innerHTML ="My sisters eyecolor is "  + mySister.eyeColor +".";
+  }
+  
+
   function count_Function() {
     document.getElementById("Counting").innerHTML = Count();
     function Count() {
